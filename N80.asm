@@ -1,0 +1,135 @@
+
+;出典	PC-Techknow8000（システムソフト）
+;	PC-8001マシン語活用ハンドブック 初級編（秀和システムトレーディング株式会社）
+
+;-----------------------------
+;ASCII 定数
+;-----------------------------
+BEL		EQU	07H
+BS		EQU	08H
+LF		EQU	0AH
+CL		EQU	0CH
+CR		EQU	0DH
+SPC		EQU	20H
+DQUOTE		EQU	22H
+SQUOTE		EQU	27H
+
+;-----------------------------
+;PC-8001システムコール
+;-----------------------------
+
+;0000H
+WARMBOOT	EQU	06AH	;ホットスタート
+BASIC		EQU	081H	;BASICへ戻る
+PUTCH		EQU	0257H	;AレジスタをASCII出力 (-)
+BEEP		EQU	0350H	;BEEPを鳴らす (A,F,E,H,L)
+LOCATE		EQU	03A9H	;LOCATE(H,L)
+CLRLN		EQU	0451H	;１行消去(A,F,B,C,D,E,F,H,L)
+CLS		EQU	045AH	;画面消去
+WIDTH		EQU	0843H	;WIDTH命令 HLにパラメータのポインタを入れてコールする "WIDTH 80,25" = 38H,30H,2CH,32H,35H,00H
+WIDTH_X		EQU	09A3H	;WIDTH命令 A<-横方向
+WIDTH_Y		EQU	09D7H	;WIDTH命令 A<-縦方向
+CURSOFF		EQU	0BD2H	;カーソル消去
+CURSON		EQU	0BE2H	;カーソル表示
+ISBRK		EQU	0CF1H	;STOP,ESCキー押下でCY<-1 非押下でZ<-1
+KEYWAIT		EQU	0F75H	;１文字入力待ち A<-CODE (A,F)
+
+;1000H
+TIME_READ	EQU	01602H	;タイマICの日時情報をワークに書き込む
+TIME_WRT	EQU	01663H	;ワークの日時情報をタイマICに書き込む
+SETFREADR	EQU	017E9H	;フリーエリアの開始アドレスをHLにセットする
+DISKB_ERR	EQU	01875H	;Disk Basic Feature エラー
+SCRNEDIT	EQU	01B7EH	;スクリーン編集実行 KEYBUFに入力文字列 STOPキーによる中断でCY<-1 (ALL)
+
+;2000H
+PRTHLDEC	EQU	02D13H	;HLレジスタの値を10進数で出力する 0抑止
+
+;3000H
+CNVFACDEC	EQU	0309FH	;16ビット10進文字列変換 FACを(HL)以降に文字列で格納する
+ERROR		EQU	03BF9H	;エラー出力 E<-エラーコード
+PRGFIT		EQU	03D76H	;BASICプログラムのアドレスをその番地にフィットさせる
+NEW		EQU	03DE0H	;NEW
+RUN		EQU	03DF4H	;RUN
+INPUT		EQU	03E5CH	;=INPUT KEYBUFに入力文字列+0 HL<-KEYBUF-1
+
+;4000H
+TPSEEK		EQU	0409BH	;次の文字が見つかるまでストリングポインタを進める 見つからなければZ<-1
+CNVDECWORD	EQU	044C7H	;(HL)以降に格納された"0"~"65529"の10進数文字列を2バイトの数値に変換してDEに入れる 
+EVALEXP		EQU	04A8FH	;ストリングポインタの式を評価してFACに入れる
+
+;5000H
+PRINT		EQU 	052EDH	;(HL)以降に格納された文字列を出力する (ALL)
+BYTE_EVALEXP	EQU	056FAH	;ストリングポインタの式を評価してAに入れる
+
+FAC2INT		EQU	0592AH	;HL<-INT(FAC)
+MON		EQU	05C66H	;モニタ復帰
+GETADRS		EQU	05E21H	;キーボードから4桁の16進を入力してHLに格納する
+CNVBYTEHEX	EQU	05E83H	;1バイトの数値を2バイトの16進文字列に変換 A->D,E
+RNUM2RAD	EQU	05B85H	;行番号→行アドレス
+RAD2RNUM	EQU	05B86H	;行アドレス→行番号。BASIC保存前に実行する
+CNVHEXBYTE	EQU	05EA0H	;2バイトの16進文字列を1バイトの数値に変換 D,E->A
+PRTHLHEX	EQU	05EC0H	;HLレジスタの値を4桁の16進数で出力する (A)
+PRTAHEX		EQU	05EC5H	;Aレジスタの値を2桁の16進数で出力する (A)
+CPHLDE		EQU	05ED3H	;ペアレジスタ比較 HL-DE (-)
+CAPITAL		EQU	05FC1H	;大文字化
+PUT_CR		EQU 	05FCAH	;改行出力 (A)
+PUT_SPC		EQU	05FD4H	;スペース出力
+
+
+;-----------------------------
+;PC-8001ワークエリア
+;-----------------------------
+FKEY_FLAG	EQU	0EA68H	;ファンクションキーが押されていれば1になる
+DT_SEC		EQU	0EA76H	;秒 BCD形式 "CALL TIME_READ"が必要
+DT_MIN		EQU	0EA77H	;分
+DT_HOUR		EQU	0EA78H	;時
+DT_DAY		EQU	0EA79H	;日
+DT_MONTH	EQU	0EA7AH	;月
+DT_YEAR		EQU	0EA7BH	;年
+FKEYDATA	EQU	0EA7CH	;ファンクションキーの内容
+
+FKEY_POINTER	EQU	0EAC0H	;リセット時ACTIVE_FKEYにセットされているアドレス
+STACK_BEGIN	EQU	0EB50H	;スタックの底
+EXECLINENUM	EQU	0EB52H	;現在実行中の行番号 停止中は0FFFFH
+BASBEGIN	EQU	0EB54H	;N-BASICのプログラムエリア先頭アドレス ~0EB55H (8021H)
+KEYBUF		EQU	0EC96H	;キー入力された文字列の格納先
+ACTIVE_FKEY	EQU	0EDC0H	;押されているファンクションキーのアドレス
+FREE_END	EQU	0EF54H	;フリーエリアの最終アドレス ~0EF55H (0E9FFH)
+STR_BEGIN	EQU	0EF79H	;文字列フリースペース先頭アドレス ~0EF7AH
+VARBEGIN	EQU	0EFA0H	;変数エリアの先頭アドレス   ~0EFA1H ( 8023H)
+ARRBEGIN	EQU	0EFA2H	;配列エリアの先頭アドレス   ~0EFA3H ( 8023H)
+FREBEGIN	EQU	0EFA4H	;フリーエリアの先頭アドレス ~0EFA5H ( 8023H)
+SYSUNUSED	EQU	0F216H	;システム未使用領域	    ~0F2FFH 233バイト
+VRAM		EQU	0F300H	;VRAMエリア                 ~0FEB7H
+BOOTSTACK	EQU	0FF3DH	;リセット時のスタックエリア ~0FFFEH 193バイト
+
+RS232BF1	EQU	0EDCEH	;RS-232C CH1 バッファ       ~0EE4DH 128バイト
+RS232BF2	EQU	0EE4EH	;RS-232C CH2 バッファ       ~0EECDH 128バイト
+IEEEWK		EQU	0EED2H	;IEEE用ワークエリア	    ~0EEF5H 35バイト
+
+ENT_CMD		EQU	0F0FDH	;拡張命令のエントリアドレス+1
+ENT_TALK	EQU	0F10CH	;
+ENT_POLL	EQU	0F115H	;
+ENT_MERGE	EQU	0F13CH	;
+ENT_KILL	EQU	0F142H	;
+ENT_LOAD	EQU	0F139H	;
+ENT_SAVE	EQU	0F14BH	;
+ENT_FILES	EQU	0F14EH	;
+ENT_MOUNT	EQU	0F154H	;
+ENT_NAME	EQU	0F13FH	;
+ENT_RBYTE	EQU	0F11BH	;
+
+;-----------------------------
+;エラーコード
+;-----------------------------
+SYNTAX_ERROR		EQU	02H
+ILLEGAL_FUNCTION_CALL	EQU	05H
+OUT_OF_MEMORY		EQU	07H
+STRING_TOO_LONG		EQU	0FH
+UNPRINTABLE		EQU	15H
+MISSING_OPERAND		EQU	16H
+LINE_BFFR_OVERFLOW	EQU	17H
+BAD_FILE_DATA		EQU	19H
+;FILE_NOT_FOUND		EQU	35H
+;FILE_ALREADY_EXISTS	EQU	3AH
+
