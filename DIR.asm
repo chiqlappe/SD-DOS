@@ -373,18 +373,17 @@ ENDIF
 .L8:	CALL	IPRINT				;
 	DB	27H,EOL				;= "'"
 
-IF SHOW_DATE
-	LD	E,(IX+18H)			;
-	LD	D,(IX+19H)			;
-	CALL	PRT_FDATE			;日付表示
-	CALL	PUT_SPC				;
-	LD	E,(IX+16H)			;
-	LD	D,(IX+17H)			;
-	CALL	PRT_FTIME			;時刻表示
-ELSE
-	CALL	PRT_FSIZE			;ファイルサイズ出力
-ENDIF
+	LD	A,(IX+0BH)			;
+	AND	00010000B			;
+	CALL	Z,PRT_FSIZE			;
 
+;	LD	E,(IX+18H)			;
+;	LD	D,(IX+19H)			;
+;	CALL	PRT_FDATE			;日付表示
+;	CALL	PUT_SPC				;
+;	LD	E,(IX+16H)			;
+;	LD	D,(IX+17H)			;
+;	CALL	PRT_FTIME			;時刻表示
 
 	CALL	PUT_CR				;改行
 .EXIT:	OR	A				;CY<-0

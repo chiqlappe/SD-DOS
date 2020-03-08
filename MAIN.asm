@@ -15,7 +15,10 @@ DEBUG	EQU	FALSE				;
 
 	DB	"AB"				;自動起動用マーカー
 
-;	CALL	INIT_DEBUG			;デバッグルーチン初期化
+if DEBUG
+	CALL	INIT_DEBUG			;デバッグルーチン初期化
+endif
+
 	CALL	INIT_FAT16			;FAT16関連ワーク初期化
 	CALL	INIT_DW				;ダブルワード用スタック初期化
 	CALL	INIT_CMDHOOK			;コマンドフック書き換え
@@ -100,13 +103,19 @@ INIT_CMDHOOK:
 	LD	HL,NAME				;ファイル名を変更する
 	LD	(ENT_NAME),HL			;
 
+	LD	HL,RBYTE			;任意のファイルをロードする
+	LD	(ENT_RBYTE),HL			;
+
 	RET					;
 
 ;=================================================
 ;インクルードファイル
 ;=================================================
 
-;INCLUDE "DEBUG.asm"				;デバッグ用ツール
+if DEBUG
+INCLUDE "DEBUG.asm"				;デバッグ用ツール
+endif
+
 INCLUDE	"MMC.asm"				;MMCドライバ
 INCLUDE	"FAT.asm"				;FAT
 INCLUDE	"BUFFER.asm"				;バッファ
@@ -120,13 +129,13 @@ INCLUDE	"TP.asm"				;テキストポインタ
 INCLUDE	"CMT.asm"				;CMTファイル関連
 INCLUDE	"BIN.asm"				;BINファイル関連
 INCLUDE	"BAS.asm"				;BASファイル関連
+INCLUDE	"RAW.asm"				;任意ファイル関連
 INCLUDE	"DATE.asm"				;日時
 INCLUDE	"DUMP.asm"				;ダンプ表示
 INCLUDE	"CMD.asm"				;コマンド
 INCLUDE	"STR.asm"				;文字列処理
 INCLUDE "MESSAGES.asm"				;メッセージ文字列
 INCLUDE	"ERROR.asm"				;エラー処理
-;INCLUDE "SCRATCH.asm"				;テスト用
 
 ;=================================================
 ;固定データ

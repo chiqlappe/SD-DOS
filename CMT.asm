@@ -121,7 +121,7 @@ READ_CMT_BASIC:
 ;=================================================
 READ_CMT_BINARY:
 	CALL	GET_FIREWALL		;スタックエリア侵入防止用の境界値をセットする
-	LD	(FIREWALL),DE		;
+;	LD	(FIREWALL),DE		;
 
 	CALL	FETCH_1BYTE		;A<-(FP),FP++
 	LD	H,A			;HL<-マシン語ファイルの先頭アドレス
@@ -132,8 +132,7 @@ READ_CMT_BINARY:
 	CALL	IS_INFO_ON		;
 	JR	Z,.L1			;
 	CALL	IPRINT			;
-	DB	"[BIN]",CR,LF		;
-	DB	"ADDRESS:",EOL		;
+	DB	"[BIN]",CR,LF,EOL	;
 	CALL	PRTHLHEX		;先頭アドレスを表示
 
 .L1:	CALL	FETCH_1BYTE		;A<-(FP),FP++
@@ -216,8 +215,8 @@ GET_FIREWALL:
 	ADD	HL,SP
 	EX	DE,HL
 	POP	HL
+	LD	(FIREWALL),DE
 	RET
-
 
 ;=================================================
 ;[CMT]疑似モニタ
@@ -489,8 +488,7 @@ FIN_WRITE:
 ;=================================================
 PRT_WRITE_BIN_INFO:
 	CALL	IPRINT			;
-	DB	"[BIN]",CR,LF		;
-	DB	"ADDRESS:",EOL		;
+	DB	"[BIN]",CR,LF,EOL	;
 	PUSH	DE			;
 	PUSH	HL			;
 	EX	DE,HL			;

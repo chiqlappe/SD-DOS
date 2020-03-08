@@ -3,7 +3,7 @@
 ;=================================================
 
 MSG_TITLE:
-	DB	CL,"< SD-DOS 2020/Jan/19 >",CR,LF,EOL
+	DB	CL,"< SD-DOS 2020/MAR/8 >",CR,LF,EOL
 
 MSG_NOT_FOUND:
 	DB	"Not found",EOL
@@ -18,7 +18,7 @@ MSG_SCTR_OVERFLOW:
 	DB	"Overflow",EOL
 
 MSG_MEMORY_CONFLICT:
-	DB	CR,LF,"Memory conflict",CR,LF,"use ",SQUOTE,"CLEAR",SQUOTE,EOL
+	DB	CR,LF,"Use ",SQUOTE,"CLEAR",SQUOTE,EOL
 
 MSG_BAD_FORMAT:
 	DB	"Bad format",EOL

@@ -29,7 +29,7 @@ IS_SAFE_ZONE:
 READ_BIN:
 	CALL	PREP_READ		;
 	CALL	GET_FIREWALL		;
-	LD	(FIREWALL),DE		;
+;	LD	(FIREWALL),DE		;
 
 	CALL	FETCH_1BYTE		;
 	LD	L,A			;HL<-マシン語ファイルの開始アドレス
@@ -50,8 +50,7 @@ READ_BIN:
 	PUSH	DE			;=終了アドレス
 	PUSH	HL			;=開始アドレス
 	CALL	IPRINT			;
-	DB	"[BIN]",CR,LF		;
-	DB	"ADDRESS:",EOL		;
+	DB	"[BIN]",CR,LF,EOL	;
 	CALL	PRTHLHEX		;開始アドレスを表示
 	LD	A,"-"			;
 	RST	18H			;

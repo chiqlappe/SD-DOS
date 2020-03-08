@@ -1,248 +1,255 @@
 
-PC-8001 SD-DOS ãƒžãƒ‹ãƒ¥ã‚¢ãƒ« <2020/1/19ç‰ˆ>
+PC-8001 SD-DOS ƒ}ƒjƒ…ƒAƒ‹ <2020/3/8”Å>
 
-â– æ›´æ–°å±¥æ­´
-	ãƒ»2020/ 1/19	MOUNTæ™‚ã«ã‚·ãƒ•ãƒˆã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã—ãŸã¾ã¾ã«ã™ã‚‹ã¨è‡ªå‹•å®Ÿè¡Œã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§ãã‚‹æ©Ÿèƒ½ã‚’è¿½åŠ 
-			DOSèµ·å‹•æ™‚ã®æ—¥æ™‚å…¥åŠ›ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’å‰Šé™¤
-			CMTãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰æ™‚ã«ã‚‚CMD OFFãŒæœ‰åŠ¹ã«ãªã‚‹ã‚ˆã†ã«ä¿®æ­£
-			SDãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®ã‚¢ã‚¯ã‚»ã‚¹LEDãŒæ¶ˆç¯ã—ãªã„ä¸å…·åˆã‚’ä¿®æ­£
-			ãƒ‡ãƒãƒƒã‚°ãƒ«ãƒ¼ãƒãƒ³ã‚’å‰Šé™¤
-	ãƒ»2020/ 1/10	BASICä¿å­˜å‰ã«è¡Œã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¡Œç•ªå·ã«å¤‰æ›ã™ã‚‹å‡¦ç†ã‚’è¿½åŠ 
-			FILESå®Ÿè¡Œæ™‚ã®è¡¨ç¤ºã‚’"'"ã«ç°¡ç´ åŒ–
-			8255ã®åˆæœŸåŒ–ã‚’99Hã‹ã‚‰98Hã«å¤‰æ›´
-			BINãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰å‡¦ç†ã‚’åŠ¹çŽ‡åŒ–
-			BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒç©ºã§ã‚‚SAVEã§ããŸä¸å…·åˆã‚’ä¿®æ­£
-			SAVEå¯èƒ½ãªæ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®æœ€å°ã‚µã‚¤ã‚ºã‚’ï¼’ãƒã‚¤ãƒˆã‹ã‚‰ï¼‘ãƒã‚¤ãƒˆã«å¤‰æ›´
-	ãƒ»2020/ 1/ 1	CMD ON,CMD OFF,CMD Vå‘½ä»¤ã‚’è¿½åŠ 
-			CMD Rå‘½ä»¤ãŒæ­£ã—ãå®Ÿè¡Œã•ã‚Œãªã„ä¸å…·åˆã‚’ä¿®æ­£
-	ãƒ»2019/12/19	LOADå‘½ä»¤ã®Rã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’å‰Šé™¤ã—ã€CMD Rå‘½ä»¤ã«å¤‰æ›´
-			BASã¨BINãƒ•ã‚¡ã‚¤ãƒ«ã‚’è¿½åŠ 
-			BINãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã‚¢ãƒ‰ãƒ¬ã‚¹ã«ãƒ­ãƒ¼ãƒ‰ã™ã‚‹æ©Ÿèƒ½ã‚’è¿½åŠ 
-			CMTãƒ•ã‚¡ã‚¤ãƒ«ã®çµ‚ç«¯ã«ã‚ã‚‹ã‚´ãƒŸã‚’ç„¡è¦–ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´
-			BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ã§00HãŒ10å€‹ç¾ã‚ŒãŸã‚‰ãƒ­ãƒ¼ãƒ‰ã‚’çµ‚äº†ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´
-			ç©ºãã‚¯ãƒ©ã‚¹ã‚¿ãŒè¦‹ã¤ã‹ã‚‰ãªããªã‚‹ãƒã‚°ã‚’ä¿®æ­£
-	ãƒ»2019/11/30	BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ãƒ­ãƒ¼ãƒ‰æ™‚ã«ã€é…åˆ—é–‹å§‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢é–‹å§‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ­£ã—ãã‚»ãƒƒãƒˆã™ã‚‹ã‚ˆã†ã«ä¿®æ­£
-			BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ãƒ­ãƒ¼ãƒ‰æ™‚ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãƒ•ã‚£ãƒƒãƒˆå®Ÿè¡Œã‚’å†é–‹
-	ãƒ»2019/11/27	BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ­ãƒ¼ãƒ‰ã™ã‚‹éš›ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãƒ•ã‚£ãƒƒãƒˆå®Ÿè¡Œã‚’åœæ­¢
+¡XV—š—ð
+	E2020/ 3/ 8	RBYTE–½—ß‚ð’Ç‰Á
+	E2020/ 1/19	MOUNTŽž‚ÉƒVƒtƒgƒL[‚ð‰Ÿ‰º‚µ‚½‚Ü‚Ü‚É‚·‚é‚ÆŽ©“®ŽÀs‚ðƒLƒƒƒ“ƒZƒ‹‚Å‚«‚é‹@”\‚ð’Ç‰Á
+			DOS‹N“®Žž‚Ì“úŽž“ü—Íƒvƒƒ“ƒvƒg‚ðíœ
+			CMTƒtƒ@ƒCƒ‹‚Ìƒ[ƒhŽž‚É‚àCMD OFF‚ª—LŒø‚É‚È‚é‚æ‚¤‚ÉC³
+			SDƒ‚ƒWƒ…[ƒ‹‚ÌƒAƒNƒZƒXLED‚ªÁ“”‚µ‚È‚¢•s‹ï‡‚ðC³
+			ƒfƒoƒbƒOƒ‹[ƒ`ƒ“‚ðíœ
+	E2020/ 1/10	BASIC•Û‘¶‘O‚ÉsƒAƒhƒŒƒX‚ðs”Ô†‚É•ÏŠ·‚·‚éˆ—‚ð’Ç‰Á
+			FILESŽÀsŽž‚Ì•\Ž¦‚ð"'"‚ÉŠÈ‘f‰»
+			8255‚Ì‰Šú‰»‚ð99H‚©‚ç98H‚É•ÏX
+			BINƒtƒ@ƒCƒ‹‚Ìƒ[ƒhˆ—‚ðŒø—¦‰»
+			BASICƒvƒƒOƒ‰ƒ€‚ª‹ó‚Å‚àSAVE‚Å‚«‚½•s‹ï‡‚ðC³
+			SAVE‰Â”\‚È‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ÌÅ¬ƒTƒCƒY‚ð‚QƒoƒCƒg‚©‚ç‚PƒoƒCƒg‚É•ÏX
+	E2020/ 1/ 1	CMD ON,CMD OFF,CMD V–½—ß‚ð’Ç‰Á
+			CMD R–½—ß‚ª³‚µ‚­ŽÀs‚³‚ê‚È‚¢•s‹ï‡‚ðC³
+	E2019/12/19	LOAD–½—ß‚ÌRƒIƒvƒVƒ‡ƒ“‚ðíœ‚µACMD R–½—ß‚É•ÏX
+			BAS‚ÆBINƒtƒ@ƒCƒ‹‚ð’Ç‰Á
+			BINƒtƒ@ƒCƒ‹‚ðŽw’èƒAƒhƒŒƒX‚Éƒ[ƒh‚·‚é‹@”\‚ð’Ç‰Á
+			CMTƒtƒ@ƒCƒ‹‚ÌI’[‚É‚ ‚éƒSƒ~‚ð–³Ž‹‚·‚é‚æ‚¤‚É•ÏX
+			BASICƒvƒƒOƒ‰ƒ€‚Å00H‚ª10ŒÂŒ»‚ê‚½‚çƒ[ƒh‚ðI—¹‚·‚é‚æ‚¤‚É•ÏX
+			‹ó‚«ƒNƒ‰ƒXƒ^‚ªŒ©‚Â‚©‚ç‚È‚­‚È‚éƒoƒO‚ðC³
+	E2019/11/30	BASICƒvƒƒOƒ‰ƒ€ƒ[ƒhŽž‚ÉA”z—ñŠJŽnƒAƒhƒŒƒX‚ÆƒtƒŠ[ƒGƒŠƒAŠJŽnƒAƒhƒŒƒX‚ð³‚µ‚­ƒZƒbƒg‚·‚é‚æ‚¤‚ÉC³
+			BASICƒvƒƒOƒ‰ƒ€ƒ[ƒhŽž‚ÌƒvƒƒOƒ‰ƒ€ƒtƒBƒbƒgŽÀs‚ðÄŠJ
+	E2019/11/27	BASICƒvƒƒOƒ‰ƒ€‚ðƒ[ƒh‚·‚éÛ‚ÌƒvƒƒOƒ‰ƒ€ƒtƒBƒbƒgŽÀs‚ð’âŽ~
 
 
-â– å‰ç½®ã
-	ãƒ»MMCãƒ‰ãƒ©ã‚¤ãƒã¨ã—ã¦ã€çŸ³æ´¥æ°ãŒå…¬é–‹ã•ã‚Œã¦ã„ã‚‹ã€ŒPC-8001ã‚’ã‚²ãƒ¼ãƒ ãƒžã‚·ãƒ³åŒ–ã€ç”¨ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ä¸€éƒ¨ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚
-	ãƒ»ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½¿ç”¨ã—ãŸçµæžœç”Ÿã˜ãŸæå®³ã«å¯¾ã—ã¦ä¸€åˆ‡ã®è²¬ä»»ã‚’è² ã„ã¾ã›ã‚“ã€‚
-	ãƒ»ä¸å…·åˆã«ã‚ˆã‚Šãƒ•ã‚¡ã‚¤ãƒ«ãŒæ¶ˆå¤±ã®å±é™ºæ€§ãŒã‚ã‚Šã¾ã™ã®ã§ã€å¤§äº‹ãªãƒ•ã‚¡ã‚¤ãƒ«ã¯å®šæœŸçš„ãªãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ã‚’å¼·ããŠå‹§ã‚ã—ã¾ã™ã€‚
-	ãƒ»æ©Ÿèƒ½å‘ä¸Šã‚’ç›®çš„ã¨ã—ãŸãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®æ”¹å¤‰ã¯è‡ªç”±ã§ã™ã€‚ãã®éš›ã¯å…¬é–‹ã—ã¦æƒ…å ±ã‚’å…±æœ‰ã—ã¾ã—ã‚‡ã†ã€‚
-	ãƒ»ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®å•†ç”¨åˆ©ç”¨ã¯ç¦æ­¢ã—ã¾ã™ã€‚
+¡‘O’u‚«
+	EMMCƒhƒ‰ƒCƒo‚Æ‚µ‚ÄAÎ’ÃŽ‚ªŒöŠJ‚³‚ê‚Ä‚¢‚éuPC-8001‚ðƒQ[ƒ€ƒ}ƒVƒ“‰»v—pƒvƒƒOƒ‰ƒ€‚Ìˆê•”‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·B
+	E‚±‚ÌƒvƒƒOƒ‰ƒ€‚ðŽg—p‚µ‚½Œ‹‰Ê¶‚¶‚½‘¹ŠQ‚É‘Î‚µ‚ÄˆêØ‚ÌÓ”C‚ð•‰‚¢‚Ü‚¹‚ñB
+	E•s‹ï‡‚É‚æ‚èƒtƒ@ƒCƒ‹‚ªÁŽ¸‚ÌŠëŒ¯«‚ª‚ ‚è‚Ü‚·‚Ì‚ÅA‘åŽ–‚Èƒtƒ@ƒCƒ‹‚Í’èŠú“I‚ÈƒoƒbƒNƒAƒbƒv‚ð‹­‚­‚¨Š©‚ß‚µ‚Ü‚·B
+	E‹@”\Œüã‚ð–Ú“I‚Æ‚µ‚½ƒvƒƒOƒ‰ƒ€‚Ì‰ü•Ï‚ÍŽ©—R‚Å‚·B‚»‚ÌÛ‚ÍŒöŠJ‚µ‚Äî•ñ‚ð‹¤—L‚µ‚Ü‚µ‚å‚¤B
+	E‚±‚ÌƒvƒƒOƒ‰ƒ€‚Ì¤—p—˜—p‚Í‹ÖŽ~‚µ‚Ü‚·B
 
-â– æ¦‚è¦	
-	ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã¯PC-8001ã®æ‹¡å¼µãƒãƒ¼ãƒˆã«æŽ¥ç¶šã•ã‚ŒãŸSDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ãƒ‰ãƒ©ã‚¤ãƒ–ã¨æ‹¡å¼µRAMã‚’ä½¿ã£ã¦ã€SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã®èª­ã¿æ›¸ãã‚’è¡Œã†ã‚‚ã®ã§ã™ã€‚ä¸€èˆ¬çš„ãªFAT16ã¨CMTãƒ•ã‚¡ã‚¤ãƒ«ã«å¯¾å¿œã—ã€PC-8001å®Ÿæ©Ÿã¨ã‚¨ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚¿é–“ã®ãƒ•ã‚¡ã‚¤ãƒ«äº¤æ›ã‚’å®¹æ˜“ã«ã—ã¾ã™ã€‚
+¡ŠT—v	
+	‚±‚ÌƒVƒXƒeƒ€‚ÍPC-8001‚ÌŠg’£ƒ|[ƒg‚ÉÚ‘±‚³‚ê‚½SDƒƒ‚ƒŠƒJ[ƒhƒhƒ‰ƒCƒu‚ÆŠg’£RAM‚ðŽg‚Á‚ÄASDƒƒ‚ƒŠƒJ[ƒh‚Ì“Ç‚Ý‘‚«‚ðs‚¤‚à‚Ì‚Å‚·Bˆê”Ê“I‚ÈFAT16‚ÆCMTƒtƒ@ƒCƒ‹‚É‘Î‰ž‚µAPC-8001ŽÀ‹@‚ÆƒGƒ~ƒ…ƒŒ[ƒ^ŠÔ‚Ìƒtƒ@ƒCƒ‹ŒðŠ·‚ð—eˆÕ‚É‚µ‚Ü‚·B
 
-â– å‹•ä½œç’°å¢ƒ
-	ãƒ»PC-8001 32KB RAM
-	ãƒ»SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ãƒ‰ãƒ©ã‚¤ãƒ–ã€€çŸ³æ´¥ç¾©å’Œæ°ã€ŒPC-8001ã‚’ã‚²ãƒ¼ãƒ ãƒžã‚·ãƒ³åŒ–ã€http://w01.tp1.jp/~a571632211/pc8001/index.html
-	ãƒ»8KBæ‹¡å¼µRAMãƒœãƒ¼ãƒ‰ã€€ã€€ã€€ã€€å·¥å­¦ç¤¾ PCæ´»ç”¨ç ”ç©¶
-	ãƒ»2GB SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰
+¡“®ìŠÂ‹«
+	EPC-8001 32KB RAM
+	ESDƒƒ‚ƒŠƒJ[ƒhƒhƒ‰ƒCƒu@Î’Ã‹`˜aŽuPC-8001‚ðƒQ[ƒ€ƒ}ƒVƒ“‰»vhttp://w01.tp1.jp/~a571632211/pc8001/index.html
+	E8KBŠg’£RAMƒ{[ƒh@@@@HŠwŽÐ PCŠˆ—pŒ¤‹†
+	E2GB SDƒƒ‚ƒŠƒJ[ƒh
 
-	SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ãƒ‰ãƒ©ã‚¤ãƒ–ã¨8KBæ‹¡å¼µRAMãƒœãƒ¼ãƒ‰ã®ã‚¬ãƒ¼ãƒãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€ã“ã¡ã‚‰ã§å…¬é–‹ã—ã¦ãŠã‚Šã¾ã™ã€‚
+	SDƒƒ‚ƒŠƒJ[ƒhƒhƒ‰ƒCƒu‚Æ8KBŠg’£RAMƒ{[ƒh‚ÌƒK[ƒo[ƒtƒ@ƒCƒ‹‚ÍA‚±‚¿‚ç‚ÅŒöŠJ‚µ‚Ä‚¨‚è‚Ü‚·B
 	https://www.dropbox.com/sh/ngv24qofx189c57/AABVqOKVXasC_ivu2KOSs-05a?dl=0
 
-â– å®Ÿè¡Œæ–¹æ³•
-	ãƒ¢ãƒ‹ã‚¿ã‹ã‚‰ãƒžã‚·ãƒ³èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¦ã€ãƒªã‚»ãƒƒãƒˆã—ã¦ãã ã•ã„ã€‚
+¡ŽÀs•û–@
+	ƒ‚ƒjƒ^‚©‚çƒ}ƒVƒ“ŒêƒvƒƒOƒ‰ƒ€‚ðƒ[ƒh‚µ‚ÄAƒŠƒZƒbƒg‚µ‚Ä‚­‚¾‚³‚¢B
 
-â– ãƒ•ã‚¡ã‚¤ãƒ«æ‹¡å¼µå­
-	SD-DOSã§ã¯ä¸‹è¨˜ã®æ‹¡å¼µå­ã‚’æŒã¤ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã§ãã¾ã™ã€‚
+¡ƒtƒ@ƒCƒ‹Šg’£Žq
+	SD-DOS‚Å‚Í‰º‹L‚ÌŠg’£Žq‚ðŽ‚Âƒtƒ@ƒCƒ‹‚ðŽg—p‚Å‚«‚Ü‚·B
 
-	.CMTï¼šCMTãƒ•ã‚¡ã‚¤ãƒ«
-	.BASï¼šBASICãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆSD-DOSå°‚ç”¨ï¼‰
-	.BINï¼šæ©Ÿæ¢°èªžãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆSD-DOSå°‚ç”¨ï¼‰
+	.CMTFCMTƒtƒ@ƒCƒ‹
+	.BASFBASICƒtƒ@ƒCƒ‹iSD-DOSê—pj
+	.BINF‹@ŠBŒêƒtƒ@ƒCƒ‹iSD-DOSê—pj
 
-â– å‘½ä»¤ä¸€è¦§
+¡–½—ßˆê——
 
-	å‡¡ä¾‹
-	<...> å¿…é ˆé …ç›®
-	[...] ã‚ªãƒ—ã‚·ãƒ§ãƒ³
-	ã€...ã€‘å¯¾å¿œã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«æ‹¡å¼µå­
-	â€» ä¸€éƒ¨ã‚’é™¤ãã€ãƒ•ã‚¡ã‚¤ãƒ«åã«ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ‘ã‚¹ã‚’å«ã‚ã‚‹ã“ã¨ãŒã§ãã¾ã™
-	ã€€ ä¸€éƒ¨ã‚’é™¤ãã€å‘½ä»¤ã®å¼•æ•°ã«å¤‰æ•°ã‚’ä½¿ç”¨ã§ãã¾ã™
+	–}—á
+	<...> •K{€–Ú
+	[...] ƒIƒvƒVƒ‡ƒ“
+	y...z‘Î‰ž‚·‚éƒtƒ@ƒCƒ‹Šg’£Žq
+	¦ ˆê•”‚ðœ‚«Aƒtƒ@ƒCƒ‹–¼‚ÉƒfƒBƒŒƒNƒgƒŠƒpƒX‚ðŠÜ‚ß‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·
+	@ ˆê•”‚ðœ‚«A–½—ß‚Ìˆø”‚É•Ï”‚ðŽg—p‚Å‚«‚Ü‚·
 
 --------------------------------------------------------------------------------
-å‘½ä»¤	MOUNT	
-æ©Ÿèƒ½	PC-8001ã§SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã‚’ä½¿ç”¨ã§ãã‚‹ã‚ˆã†ã«ã—ã¾ã™ã€‚
-æ›¸å¼	MOUNT
-æ–‡ä¾‹	MOUNT
-è§£èª¬	SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã®ä½¿ç”¨ã‚’å§‹ã‚ã‚‹å‰ã‚„ã€SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã‚’å…¥ã‚Œæ›¿ãˆãŸéš›ã«ã¯å¿…ãšå®Ÿè¡Œã—ã¦ä¸‹ã•ã„ã€‚
-	PC-8001ã«æ—¥æ™‚ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„æ™‚ã¯ã€å…¥åŠ›ã‚’ä¿ƒã™ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
-	"/HELLO.CMT"ãŒã‚ã‚Œã°ã€MOUNTæ™‚ã«ãƒ­ãƒ¼ãƒ‰ã—ã¦BASICã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
-	MOUNTæ™‚ã«ã‚·ãƒ•ãƒˆã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã—ãŸã¾ã¾ã«ã™ã‚‹ã¨ã€è‡ªå‹•å®Ÿè¡Œã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¾ã™ã€‚
+–½—ß	MOUNT	
+‹@”\	PC-8001‚ÅSDƒƒ‚ƒŠƒJ[ƒh‚ðŽg—p‚Å‚«‚é‚æ‚¤‚É‚µ‚Ü‚·B
+‘Ž®	MOUNT
+•¶—á	MOUNT
+‰ðà	SDƒƒ‚ƒŠƒJ[ƒh‚ÌŽg—p‚ðŽn‚ß‚é‘O‚âASDƒƒ‚ƒŠƒJ[ƒh‚ð“ü‚ê‘Ö‚¦‚½Û‚É‚Í•K‚¸ŽÀs‚µ‚Ä‰º‚³‚¢B
+	PC-8001‚É“úŽž‚ªÝ’è‚³‚ê‚Ä‚¢‚È‚¢Žž‚ÍA“ü—Í‚ð‘£‚·ƒƒbƒZ[ƒW‚ª•\Ž¦‚³‚ê‚Ü‚·B
+	"/HELLO.CMT"‚ª‚ ‚ê‚ÎAMOUNTŽž‚Éƒ[ƒh‚µ‚ÄBASIC‚ðŽÀs‚µ‚Ü‚·B
+	MOUNTŽž‚ÉƒVƒtƒgƒL[‚ð‰Ÿ‰º‚µ‚½‚Ü‚Ü‚É‚·‚é‚ÆAŽ©“®ŽÀs‚ðƒLƒƒƒ“ƒZƒ‹‚µ‚Ü‚·B
 --------------------------------------------------------------------------------
-å‘½ä»¤	FILES
-æ©Ÿèƒ½	ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ç§»å‹•ã—ã¦å†…å®¹ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
-æ›¸å¼	FILES [ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ‘ã‚¹]
-æ–‡ä¾‹	FILES
+–½—ß	FILES
+‹@”\	ƒfƒBƒŒƒNƒgƒŠ‚ðˆÚ“®‚µ‚Ä“à—e‚ð•\Ž¦‚µ‚Ü‚·B
+‘Ž®	FILES [ƒfƒBƒŒƒNƒgƒŠƒpƒX]
+•¶—á	FILES
 	FILES "/DIR1/DIR2"
-è§£èª¬	æŒ‡å®šã•ã‚ŒãŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ãƒ¯ãƒ¼ã‚­ãƒ³ã‚°ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å¤‰æ›´ã—ã€ãã®å†…å®¹ã‚’ä¸€è¦§è¡¨ç¤ºã—ã¾ã™ã€‚
-	ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªåã®å…ˆé ­ã«ã¯"<DIR>"ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
-å‚ç…§	POLL
+‰ðà	Žw’è‚³‚ê‚½ƒfƒBƒŒƒNƒgƒŠ‚ðƒ[ƒLƒ“ƒOƒfƒBƒŒƒNƒgƒŠ‚É•ÏX‚µA‚»‚Ì“à—e‚ðˆê——•\Ž¦‚µ‚Ü‚·B
+	ƒfƒBƒŒƒNƒgƒŠ–¼‚Ìæ“ª‚É‚Í"<DIR>"‚ª•\Ž¦‚³‚ê‚Ü‚·B
+ŽQÆ	POLL
 --------------------------------------------------------------------------------
-å‘½ä»¤	LOAD	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã‹ã‚‰ãƒ¡ãƒ¢ãƒªã«ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
-æ›¸å¼	ã€CMTã€‘LOAD <ãƒ•ã‚¡ã‚¤ãƒ«å>
-	ã€BASã€‘LOAD <ãƒ•ã‚¡ã‚¤ãƒ«å>
-	ã€BINã€‘LOAD <ãƒ•ã‚¡ã‚¤ãƒ«å>[,é–‹å§‹ã‚¢ãƒ‰ãƒ¬ã‚¹]
-æ–‡ä¾‹	LOAD "PRG.CMT"
+–½—ß	LOAD	yCMTzyBASzyBINz
+‹@”\	ƒvƒƒOƒ‰ƒ€‚ðSDƒƒ‚ƒŠƒJ[ƒh‚©‚çƒƒ‚ƒŠ‚Éƒ[ƒh‚µ‚Ü‚·B
+‘Ž®	yCMTzLOAD <ƒtƒ@ƒCƒ‹–¼>
+	yBASzLOAD <ƒtƒ@ƒCƒ‹–¼>
+	yBINzLOAD <ƒtƒ@ƒCƒ‹–¼>[,ŠJŽnƒAƒhƒŒƒX]
+•¶—á	LOAD "PRG.CMT"
 	LOAD "PRG.BAS"
 	LOAD "PRG.BIN",&HC000
-è§£èª¬	<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸBASICãƒ»æ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã€ãƒ¡ãƒ¢ãƒªä¸Šã«ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
-	ã€CMTã€‘ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒ³ã‚­ãƒ¼ã‚’åˆ©ç”¨ã—ãŸã‚ªãƒ¼ãƒˆãƒ©ãƒ³æ©Ÿèƒ½ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
-	ã€BINã€‘èª­ã¿è¾¼ã¿é–‹å§‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æŒ‡å®šã—ã¦ãƒ­ãƒ¼ãƒ‰ã§ãã¾ã™ã€‚
-åˆ¶é™	ã€CMTã€‘CMTãƒ•ã‚¡ã‚¤ãƒ«å†…ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ä¸€æ‹¬ã—ã¦èª­ã¿è¾¼ã¾ã‚Œã‚‹ãŸã‚ã€è¤‡æ•°ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒåŽéŒ²ã•ã‚Œã¦ã„ã‚‹å ´åˆã€ãƒ¡ãƒ¢ãƒªã¯å¾Œã‹ã‚‰èª­ã¿è¾¼ã¾ã‚Œã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã«ã‚ˆã£ã¦ä¸Šæ›¸ãã•ã‚Œã¾ã™ã€‚
-å‚ç…§	SAVE,MERGE,CMD R
+‰ðà	<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½BASICE‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ðAƒƒ‚ƒŠã‚Éƒ[ƒh‚µ‚Ü‚·B
+	yCMTzƒtƒ@ƒ“ƒNƒVƒ‡ƒ“ƒL[‚ð—˜—p‚µ‚½ƒI[ƒgƒ‰ƒ“‹@”\‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+	yBINz“Ç‚Ýž‚ÝŠJŽnƒAƒhƒŒƒX‚ðŽw’è‚µ‚Äƒ[ƒh‚Å‚«‚Ü‚·B
+§ŒÀ	yCMTzCMTƒtƒ@ƒCƒ‹“à‚ÌƒvƒƒOƒ‰ƒ€‚ÍˆêŠ‡‚µ‚Ä“Ç‚Ýž‚Ü‚ê‚é‚½‚ßA•¡”‚ÌƒvƒƒOƒ‰ƒ€‚ªŽû˜^‚³‚ê‚Ä‚¢‚éê‡Aƒƒ‚ƒŠ‚ÍŒã‚©‚ç“Ç‚Ýž‚Ü‚ê‚éƒvƒƒOƒ‰ƒ€‚É‚æ‚Á‚Äã‘‚«‚³‚ê‚Ü‚·B
+ŽQÆ	SAVE,MERGE,CMD R,RBYTE
 --------------------------------------------------------------------------------
-å‘½ä»¤	SAVE	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ¡ãƒ¢ãƒªã‹ã‚‰SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã«ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã€‚
-æ›¸å¼	ã€CMTã€‘SAVE <ãƒ•ã‚¡ã‚¤ãƒ«å>[,å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹,çµ‚äº†ã‚¢ãƒ‰ãƒ¬ã‚¹]
-	ã€BASã€‘SAVE <ãƒ•ã‚¡ã‚¤ãƒ«å>
-	ã€BINã€‘SAVE <ãƒ•ã‚¡ã‚¤ãƒ«å>[,å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹,çµ‚äº†ã‚¢ãƒ‰ãƒ¬ã‚¹[,å®Ÿè¡Œã‚¢ãƒ‰ãƒ¬ã‚¹]]
-æ–‡ä¾‹	SAVE "PRG.CMT"
+–½—ß	SAVE	yCMTzyBASzyBINz
+‹@”\	ƒvƒƒOƒ‰ƒ€‚ðƒƒ‚ƒŠ‚©‚çSDƒƒ‚ƒŠƒJ[ƒh‚ÉƒZ[ƒu‚µ‚Ü‚·B
+‘Ž®	yCMTzSAVE <ƒtƒ@ƒCƒ‹–¼>[,ŠJŽnƒAƒhƒŒƒX,I—¹ƒAƒhƒŒƒX]
+	yBASzSAVE <ƒtƒ@ƒCƒ‹–¼>
+	yBINzSAVE <ƒtƒ@ƒCƒ‹–¼>[,ŠJŽnƒAƒhƒŒƒX,I—¹ƒAƒhƒŒƒX[,ŽÀsƒAƒhƒŒƒX]]
+•¶—á	SAVE "PRG.CMT"
 	SAVE "PRG.BAS"
 	SAVE "PRG.BIN",&HC000,&HCFFF,&HC123
-è§£èª¬	<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸBASICãƒ»æ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã€SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã«ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã€‚
-	ã€CMTã€‘ã‚³ãƒžãƒ³ãƒ‰ã«<å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹>ã¨<çµ‚äº†ã‚¢ãƒ‰ãƒ¬ã‚¹>ã‚’å«ã‚ã‚‹ã¨ã€æ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨ã—ã¦ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã€‚
-	ã€CMTã€‘<ãƒ•ã‚¡ã‚¤ãƒ«å>ã®ã¿ã®å ´åˆã¯BASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨ã—ã¦ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã€‚
-	ã€CMTã€‘ã²ã¨ã¤ã®CMTãƒ•ã‚¡ã‚¤ãƒ«ã«BASICã¨æ©Ÿæ¢°èªžã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ä¸¡æ–¹ã‚’æ ¼ç´ã—ãŸã„å ´åˆã¯ã€MERGEå‘½ä»¤ã‚’ä½¿ç”¨ã—ã¦ä¸‹ã•ã„ã€‚
-	ã€BINã€‘å®Ÿè¡Œã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã§ã€CMD Rå‘½ä»¤ã§ç›´æŽ¥å®Ÿè¡Œã§ãã¾ã™ã€‚
-å‚ç…§	LOAD,MERGE,CMD R
+‰ðà	<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½BASICE‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ðASDƒƒ‚ƒŠƒJ[ƒh‚ÉƒZ[ƒu‚µ‚Ü‚·B
+	yCMTzƒRƒ}ƒ“ƒh‚É<ŠJŽnƒAƒhƒŒƒX>‚Æ<I—¹ƒAƒhƒŒƒX>‚ðŠÜ‚ß‚é‚ÆA‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚Æ‚µ‚ÄƒZ[ƒu‚µ‚Ü‚·B
+	yCMTz<ƒtƒ@ƒCƒ‹–¼>‚Ì‚Ý‚Ìê‡‚ÍBASICƒvƒƒOƒ‰ƒ€‚Æ‚µ‚ÄƒZ[ƒu‚µ‚Ü‚·B
+	yCMTz‚Ð‚Æ‚Â‚ÌCMTƒtƒ@ƒCƒ‹‚ÉBASIC‚Æ‹@ŠBŒê‚ÌƒvƒƒOƒ‰ƒ€‚Ì—¼•û‚ðŠi”[‚µ‚½‚¢ê‡‚ÍAMERGE–½—ß‚ðŽg—p‚µ‚Ä‰º‚³‚¢B
+	yBINzŽÀsƒAƒhƒŒƒX‚ðŽw’è‚·‚é‚±‚Æ‚ÅACMD R–½—ß‚Å’¼ÚŽÀs‚Å‚«‚Ü‚·B
+ŽQÆ	LOAD,MERGE,CMD R
 --------------------------------------------------------------------------------
-å‘½ä»¤	KILL	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã‹ã‚‰ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
-æ›¸å¼	KILL <ãƒ•ã‚¡ã‚¤ãƒ«å>
-æ–‡ä¾‹	KILL "NOUSE.CMT"
-è§£èª¬	<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’SDãƒ¡ãƒ¢ãƒªã‚«ãƒ¼ãƒ‰ã‹ã‚‰å‰Šé™¤ã—ã¾ã™ã€‚
+
+¦V‹@”\
+–½—ß	RBYTE	y”CˆÓ‚ÌŠg’£Žqz
+‹@”\	”CˆÓ‚ÌŠg’£Žq‚ðŽ‚Âƒtƒ@ƒCƒ‹‚ðSDƒƒ‚ƒŠƒJ[ƒh‚©‚çƒƒ‚ƒŠ‚Éƒ[ƒh‚µ‚Ü‚·B
+‘Ž®	RBYTE <ƒtƒ@ƒCƒ‹–¼,ŠJŽnƒAƒhƒŒƒX>
+•¶—á	RBYTE "DIARY.DOC",&HC000
+‰ðà	<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ðAŠJŽnƒAƒhƒŒƒXˆÈ~‚Ìƒƒ‚ƒŠã‚Éƒ[ƒh‚µ‚Ü‚·B‘¼‚ÌOS‚Åì¬‚µ‚½ƒf[ƒ^‚ðPC-8001ã‚Å—˜—p‚·‚éÛ‚É•Ö—˜‚Å‚·B
+ŽQÆ	LOAD
 --------------------------------------------------------------------------------
-å‘½ä»¤	MERGE	ã€CMTã€‘
-æ©Ÿèƒ½	ã™ã§ã«ã‚ã‚‹CMTãƒ•ã‚¡ã‚¤ãƒ«ã«ã€ãƒ¡ãƒ¢ãƒªä¸Šã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’è¿½è¨˜ã—ã¾ã™ã€‚
-æ›¸å¼	ã€CMTã€‘MERGE <ãƒ•ã‚¡ã‚¤ãƒ«å>[,å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹,çµ‚äº†ã‚¢ãƒ‰ãƒ¬ã‚¹]
-æ–‡ä¾‹	MERGE "PRG1.CMT"
+–½—ß	KILL	yCMTzyBASzyBINz
+‹@”\	SDƒƒ‚ƒŠƒJ[ƒh‚©‚çƒtƒ@ƒCƒ‹‚ðíœ‚µ‚Ü‚·B
+‘Ž®	KILL <ƒtƒ@ƒCƒ‹–¼>
+•¶—á	KILL "NOUSE.CMT"
+‰ðà	<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ðSDƒƒ‚ƒŠƒJ[ƒh‚©‚çíœ‚µ‚Ü‚·B
+--------------------------------------------------------------------------------
+–½—ß	MERGE	yCMTz
+‹@”\	‚·‚Å‚É‚ ‚éCMTƒtƒ@ƒCƒ‹‚ÉAƒƒ‚ƒŠã‚ÌƒvƒƒOƒ‰ƒ€‚ð’Ç‹L‚µ‚Ü‚·B
+‘Ž®	yCMTzMERGE <ƒtƒ@ƒCƒ‹–¼>[,ŠJŽnƒAƒhƒŒƒX,I—¹ƒAƒhƒŒƒX]
+•¶—á	MERGE "PRG1.CMT"
 	MERGE "PRG2.CMT",&HC000,&HCFFF
-è§£èª¬	ã€CMTã€‘è¤‡æ•°ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã²ã¨ã¤ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«æ ¼ç´ã—ãŸã„å ´åˆã«ä½¿ç”¨ã—ã¾ã™ã€‚ã‚»ãƒ¼ãƒ–æ–¹æ³•ã¯SAVEã‚³ãƒžãƒ³ãƒ‰ã¨åŒæ§˜ã§ã™ã€‚
-å‚ç…§	LOAD,SAVE
+‰ðà	yCMTz•¡”‚ÌƒvƒƒOƒ‰ƒ€‚ð‚Ð‚Æ‚Â‚Ìƒtƒ@ƒCƒ‹‚ÉŠi”[‚µ‚½‚¢ê‡‚ÉŽg—p‚µ‚Ü‚·BƒZ[ƒu•û–@‚ÍSAVEƒRƒ}ƒ“ƒh‚Æ“¯—l‚Å‚·B
+ŽQÆ	LOAD,SAVE
 --------------------------------------------------------------------------------
-å‘½ä»¤	POLL
-æ©Ÿèƒ½	ãƒ¯ãƒ¼ã‚­ãƒ³ã‚°ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å¤‰æ›´ã—ã¾ã™ã€‚
-æ›¸å¼	POLL <ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ‘ã‚¹>
-æ–‡ä¾‹	POLL "/DIR1/DIR2"
+–½—ß	POLL
+‹@”\	ƒ[ƒLƒ“ƒOƒfƒBƒŒƒNƒgƒŠ‚ð•ÏX‚µ‚Ü‚·B
+‘Ž®	POLL <ƒfƒBƒŒƒNƒgƒŠƒpƒX>
+•¶—á	POLL "/DIR1/DIR2"
 	POLL "../../DIR0"
-è§£èª¬	ãƒ¯ãƒ¼ã‚­ãƒ³ã‚°ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ã€æŒ‡å®šã—ãŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å¤‰æ›´ã—ã¾ã™ã€‚
-	ãƒ«ãƒ¼ãƒˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®æŒ‡å®šã«ã¯"/"ã‚’ã€è¦ªãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®æŒ‡å®šã«ã¯".."ã‚’ä½¿ç”¨ã§ãã¾ã™ã€‚
-å‚ç…§	FILES
+‰ðà	ƒ[ƒLƒ“ƒOƒfƒBƒŒƒNƒgƒŠ‚ðAŽw’è‚µ‚½ƒfƒBƒŒƒNƒgƒŠ‚É•ÏX‚µ‚Ü‚·B
+	ƒ‹[ƒgƒfƒBƒŒƒNƒgƒŠ‚ÌŽw’è‚É‚Í"/"‚ðAeƒfƒBƒŒƒNƒgƒŠ‚ÌŽw’è‚É‚Í".."‚ðŽg—p‚Å‚«‚Ü‚·B
+ŽQÆ	FILES
 --------------------------------------------------------------------------------
-å‘½ä»¤	NAME	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ•ã‚¡ã‚¤ãƒ«åã¾ãŸã¯ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªåã‚’å¤‰æ›´ã—ã¾ã™ã€‚
-æ›¸å¼	NAME <ç¾åœ¨ã®åå‰> , <æ–°ã—ã„åå‰>
-æ–‡ä¾‹	NAME "OLD.CMT" , "NEW.CMT"
-è§£èª¬	ç¾åœ¨ã®åå‰ã«å¯¾ã—ã¦ã®ã¿ã€ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹ã‚’å«ã‚ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
-å‚ç…§
+–½—ß	NAME	yCMTzyBASzyBINz
+‹@”\	ƒtƒ@ƒCƒ‹–¼‚Ü‚½‚ÍƒfƒBƒŒƒNƒgƒŠ–¼‚ð•ÏX‚µ‚Ü‚·B
+‘Ž®	NAME <Œ»Ý‚Ì–¼‘O> , <V‚µ‚¢–¼‘O>
+•¶—á	NAME "OLD.CMT" , "NEW.CMT"
+‰ðà	Œ»Ý‚Ì–¼‘O‚É‘Î‚µ‚Ä‚Ì‚ÝAƒtƒ@ƒCƒ‹ƒpƒX‚ðŠÜ‚ß‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ŽQÆ
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD P	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ•ã‚¡ã‚¤ãƒ«ã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
-æ›¸å¼	CMD P <ãƒ•ã‚¡ã‚¤ãƒ«å ã¾ãŸã¯ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå>
-æ–‡ä¾‹	CMD P "FILE.CMT"
+–½—ß	CMD P	yCMTzyBASzyBINz
+‹@”\	ƒtƒ@ƒCƒ‹‚âƒfƒBƒŒƒNƒgƒŠ‚ÌƒvƒƒpƒeƒB‚ð•\Ž¦‚µ‚Ü‚·B
+‘Ž®	CMD P <ƒtƒ@ƒCƒ‹–¼ ‚Ü‚½‚Í ƒfƒBƒŒƒNƒgƒŠ–¼>
+•¶—á	CMD P "FILE.CMT"
 	CMD P "/DIR"
-è§£èª¬	ãƒ•ã‚¡ã‚¤ãƒ«ã®ä½œæˆæ—¥æ™‚ã‚„ã‚µã‚¤ã‚ºã€FATãƒ‡ãƒ¼ã‚¿ã€å±žæ€§å€¤ãªã©ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
+‰ðà	ƒtƒ@ƒCƒ‹‚Ìì¬“úŽž‚âƒTƒCƒYAFATƒf[ƒ^A‘®«’l‚È‚Ç‚ð•\Ž¦‚µ‚Ü‚·B
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD R	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	BASICãƒ•ã‚¡ã‚¤ãƒ«ã€ã¾ãŸã¯ã€å®Ÿè¡Œã‚¢ãƒ‰ãƒ¬ã‚¹ãŒæŒ‡å®šã•ã‚ŒãŸBINãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç›´æŽ¥å®Ÿè¡Œã—ã¾ã™ã€‚
-æ›¸å¼	ã€BINã€‘CMD R <ãƒ•ã‚¡ã‚¤ãƒ«å>
-æ–‡ä¾‹	CMD R "PRG.BIN"
-è§£èª¬	ã€CMTã€‘<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸBASICãƒ»æ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ¡ãƒ¢ãƒªä¸Šã«ãƒ­ãƒ¼ãƒ‰ã—ã€RUNå‘½ä»¤ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
-è§£èª¬	ã€BASã€‘<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸBASICãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ¡ãƒ¢ãƒªä¸Šã«ãƒ­ãƒ¼ãƒ‰ã—ã€RUNå‘½ä»¤ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
-	ã€BINã€‘<ãƒ•ã‚¡ã‚¤ãƒ«å>ã§æŒ‡å®šã•ã‚ŒãŸæ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ¡ãƒ¢ãƒªä¸Šã«ãƒ­ãƒ¼ãƒ‰ã—ã€å®Ÿè¡Œã‚¢ãƒ‰ãƒ¬ã‚¹ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚Œã°ã€ãã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å‡¦ç†ã‚’ç§»ã—ã¾ã™ã€‚
-å‚ç…§	LOAD,SAVE
+–½—ß	CMD R	yCMTzyBASzyBINz
+‹@”\	BASICƒtƒ@ƒCƒ‹A‚Ü‚½‚ÍAŽÀsƒAƒhƒŒƒX‚ªŽw’è‚³‚ê‚½BINƒtƒ@ƒCƒ‹‚ð’¼ÚŽÀs‚µ‚Ü‚·B
+‘Ž®	yBINzCMD R <ƒtƒ@ƒCƒ‹–¼>
+•¶—á	CMD R "PRG.BIN"
+‰ðà	yCMTz<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½BASICE‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ðƒƒ‚ƒŠã‚Éƒ[ƒh‚µARUN–½—ß‚ðŽÀs‚µ‚Ü‚·B
+‰ðà	yBASz<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½BASICƒvƒƒOƒ‰ƒ€‚ðƒƒ‚ƒŠã‚Éƒ[ƒh‚µARUN–½—ß‚ðŽÀs‚µ‚Ü‚·B
+	yBINz<ƒtƒ@ƒCƒ‹–¼>‚ÅŽw’è‚³‚ê‚½‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ðƒƒ‚ƒŠã‚Éƒ[ƒh‚µAŽÀsƒAƒhƒŒƒX‚ªŽw’è‚³‚ê‚Ä‚¢‚ê‚ÎA‚»‚ÌƒAƒhƒŒƒX‚Éˆ—‚ðˆÚ‚µ‚Ü‚·B
+ŽQÆ	LOAD,SAVE
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD F
-æ©Ÿèƒ½	BASICã®ãƒ•ãƒªãƒ¼ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ•°ç™¾ãƒã‚¤ãƒˆå¢—ã‚„ã—ã¾ã™ã€‚
-æ›¸å¼	CMD F
-æ–‡ä¾‹	CMD F
-è§£èª¬	BASICã®é–‹å§‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ‹¡å¼µRAMé ˜åŸŸã¸ç§»å‹•ã™ã‚‹ã“ã¨ã§ã€ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ã‚’å¢—ã‚„ã—ã¾ã™ã€‚
-	CLEARå‘½ä»¤ã‚’åˆã‚ã›ã¦ä½¿ãˆã°ã€ã‚ˆã‚Šå¤§ããªã‚µã‚¤ã‚ºã®æ©Ÿæ¢°èªžãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ­ãƒ¼ãƒ‰å¯èƒ½ã«ãªã‚Šã¾ã™ã€‚
-
-
-â– æ–°ã—ãè¿½åŠ ã•ã‚ŒãŸå‘½ä»¤
+–½—ß	CMD F
+‹@”\	BASIC‚ÌƒtƒŠ[ƒAƒhƒŒƒX‚ð”•SƒoƒCƒg‘‚â‚µ‚Ü‚·B
+‘Ž®	CMD F
+•¶—á	CMD F
+‰ðà	BASIC‚ÌŠJŽnƒAƒhƒŒƒX‚ðŠg’£RAM—Ìˆæ‚ÖˆÚ“®‚·‚é‚±‚Æ‚ÅAƒtƒŠ[ƒGƒŠƒA‚ð‘‚â‚µ‚Ü‚·B
+	CLEAR–½—ß‚ð‡‚í‚¹‚ÄŽg‚¦‚ÎA‚æ‚è‘å‚«‚ÈƒTƒCƒY‚Ì‹@ŠBŒêƒvƒƒOƒ‰ƒ€‚ðƒ[ƒh‰Â”\‚É‚È‚è‚Ü‚·B
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD ON	ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ­ãƒ¼ãƒ‰ä¸­ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚ï¼ˆåˆæœŸçŠ¶æ…‹ï¼‰
-æ›¸å¼	CMD ON
-æ–‡ä¾‹	CMD ON
-è§£èª¬	ãƒ­ãƒ¼ãƒ‰ã—ã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®ç¨®é¡žã‚„ãƒ¡ãƒ¢ãƒªã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
-å‚ç…§	CMD ON
+–½—ß	CMD ON	yBASzyBINz
+‹@”\	ƒ[ƒh’†‚ÌƒƒbƒZ[ƒW‚ð•\Ž¦‚µ‚Ü‚·Bi‰Šúó‘Ôj
+‘Ž®	CMD ON
+•¶—á	CMD ON
+‰ðà	ƒ[ƒh‚µ‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ÌŽí—Þ‚âƒƒ‚ƒŠƒAƒhƒŒƒX‚ð•\Ž¦‚µ‚Ü‚·B
+ŽQÆ	CMD ON
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD OFF	ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ­ãƒ¼ãƒ‰ä¸­ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŠ‘æ­¢ã—ã¾ã™ã€‚
-æ›¸å¼	CMD OFF
-æ–‡ä¾‹	CMD OFF
-è§£èª¬	ãƒ­ãƒ¼ãƒ‰ä¸­ã«ç”»é¢ã‚’å´©ã—ãŸããªã„å ´åˆã«ä½¿ç”¨ã—ã¾ã™ã€‚
-å‚ç…§	CMD ON
+–½—ß	CMD OFF	yBASzyBINz
+‹@”\	ƒ[ƒh’†‚ÌƒƒbƒZ[ƒW‚ð—}Ž~‚µ‚Ü‚·B
+‘Ž®	CMD OFF
+•¶—á	CMD OFF
+‰ðà	ƒ[ƒh’†‚É‰æ–Ê‚ð•ö‚µ‚½‚­‚È‚¢ê‡‚ÉŽg—p‚µ‚Ü‚·B
+ŽQÆ	CMD ON
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD V
-æ©Ÿèƒ½	DOSãƒ—ãƒ­ã‚°ãƒ©ãƒ é ˜åŸŸã®ãƒã‚§ãƒƒã‚¯ã‚µãƒ ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
-æ›¸å¼	CMD V
-æ–‡ä¾‹	CMD V
-è§£èª¬	ãã®æ™‚ç‚¹ã®DOSãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ãƒ¡ãƒ¢ãƒªã‚’èª¿ã¹ã¦ãƒã‚§ãƒƒã‚¯ã‚µãƒ ã‚’ç®—å‡ºã—ã¾ã™ã€‚
-	ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒæ›¸ãæ›ãˆã‚‰ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ãŸã„å ´åˆã«ä½¿ç”¨ã—ã¦ä¸‹ã•ã„ã€‚
-	ãƒã‚§ãƒƒã‚¯ã‚µãƒ ã®ä»•æ§˜ä¸Šã€å¿…ãšã—ã‚‚ã™ã¹ã¦ã®ç•°å¸¸ã‚’æ¤œå‡ºã§ãã‚‹è¨³ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
+–½—ß	CMD V
+‹@”\	DOSƒvƒƒOƒ‰ƒ€—Ìˆæ‚Ìƒ`ƒFƒbƒNƒTƒ€‚ð•\Ž¦‚µ‚Ü‚·B
+‘Ž®	CMD V
+•¶—á	CMD V
+‰ðà	‚»‚ÌŽž“_‚ÌDOSƒvƒƒOƒ‰ƒ€‚Ìƒƒ‚ƒŠ‚ð’²‚×‚Äƒ`ƒFƒbƒNƒTƒ€‚ðŽZo‚µ‚Ü‚·B
+	ƒvƒƒOƒ‰ƒ€‚ª‘‚«Š·‚¦‚ç‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚½‚¢ê‡‚ÉŽg—p‚µ‚Ä‰º‚³‚¢B
+	ƒ`ƒFƒbƒNƒTƒ€‚ÌŽd—lãA•K‚¸‚µ‚à‚·‚×‚Ä‚ÌˆÙí‚ðŒŸo‚Å‚«‚é–ó‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
 
 
 
-â– æ‹¡å¼µå‘½ä»¤
-	ã“ã‚Œã‚‰ã®æ‹¡å¼µå‘½ä»¤ã‚’ä½¿ç”¨ã™ã‚‹å ´åˆã¯ã€SD-DOSã«ç¶šã‘ã¦åŽéŒ²ã•ã‚Œã¦ã„ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒ¢ãƒ‹ã‚¿ã‹ã‚‰ãƒ­ãƒ¼ãƒ‰ã—ã¦å®Ÿè¡Œã—ã¦ãã ã•ã„ã€‚
-	å®Ÿè¡Œã‚¢ãƒ‰ãƒ¬ã‚¹ï¼š&HC000
+¡Šg’£–½—ß
+	‚±‚ê‚ç‚ÌŠg’£–½—ß‚ðŽg—p‚·‚éê‡‚ÍASD-DOS‚É‘±‚¯‚ÄŽû˜^‚³‚ê‚Ä‚¢‚éƒvƒƒOƒ‰ƒ€‚ðƒ‚ƒjƒ^‚©‚çƒ[ƒh‚µ‚ÄŽÀs‚µ‚Ä‚­‚¾‚³‚¢B
+	ŽÀsƒAƒhƒŒƒXF&HC000
 
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD CP	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
-æ›¸å¼	CMD CP <ã‚³ãƒ”ãƒ¼å…ƒãƒ•ã‚¡ã‚¤ãƒ«å> , <ã‚³ãƒ”ãƒ¼å…ˆãƒ•ã‚¡ã‚¤ãƒ«å>
-æ–‡ä¾‹	CMD CP "/DIR/ORIG.CMT","/DIR2/COPY.CMT"
-è§£èª¬	åŒä¸€ã‚ã‚‹ã„ã¯ç•°ãªã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªé–“ã§ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ”ãƒ¼ã§ãã¾ã™ã€‚
-å‚ç…§	CMD EX
+–½—ß	CMD CP	yCMTzyBASzyBINz
+‹@”\	ƒtƒ@ƒCƒ‹‚ðƒRƒs[‚µ‚Ü‚·B
+‘Ž®	CMD CP <ƒRƒs[Œ³ƒtƒ@ƒCƒ‹–¼> , <ƒRƒs[æƒtƒ@ƒCƒ‹–¼>
+•¶—á	CMD CP "/DIR/ORIG.CMT","/DIR2/COPY.CMT"
+‰ðà	“¯ˆê‚ ‚é‚¢‚ÍˆÙ‚È‚éƒfƒBƒŒƒNƒgƒŠŠÔ‚Åƒtƒ@ƒCƒ‹‚ðƒRƒs[‚Å‚«‚Ü‚·B
+ŽQÆ	CMD EX
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD MD
-æ©Ÿèƒ½	ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã—ã¾ã™ã€‚
-æ›¸å¼	CMD MD <ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå>
-æ–‡ä¾‹	CMD MD "NEWDIR"
-è§£èª¬	æŒ‡å®šã—ãŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªé…ä¸‹ã«ã€æ–°ã—ã„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã—ã¾ã™ã€‚
-å‚ç…§	CMD EX
+–½—ß	CMD MD
+‹@”\	ƒfƒBƒŒƒNƒgƒŠ‚ðì¬‚µ‚Ü‚·B
+‘Ž®	CMD MD <ƒfƒBƒŒƒNƒgƒŠ–¼>
+•¶—á	CMD MD "NEWDIR"
+‰ðà	Žw’è‚µ‚½ƒfƒBƒŒƒNƒgƒŠ”z‰º‚ÉAV‚µ‚¢ƒfƒBƒŒƒNƒgƒŠ‚ðì¬‚µ‚Ü‚·B
+ŽQÆ	CMD EX
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD EX
-æ©Ÿèƒ½	ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®æ ¼ç´ã‚µã‚¤ã‚ºã‚’æ‹¡å¼µã—ã¾ã™ã€‚
-æ›¸å¼	CMD EX <ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå>
-æ–‡ä¾‹	CMD EX "DIR"
-è§£èª¬	ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«æ–°ã—ã„ã‚¯ãƒ©ã‚¹ã‚¿ã‚’å‰²ã‚Šå½“ã¦ã€ãƒ•ã‚¡ã‚¤ãƒ«ç­‰ã®æ ¼ç´æ•°ã‚’å¢—ã‚„ã—ã¾ã™ã€‚
-	ãƒ•ã‚¡ã‚¤ãƒ«ã‚»ãƒ¼ãƒ–æ™‚ã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä½œæˆæ™‚ã«ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ•ãƒ«ã®ã‚¨ãƒ©ãƒ¼ãŒå‡ºãŸéš›ã«ä½¿ç”¨ã—ã¾ã™ã€‚
-	ãªãŠã€FAT16ã®ä»•æ§˜ã«ã‚ˆã‚Šãƒ«ãƒ¼ãƒˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å¯¾ã—ã¦ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
-å‚ç…§	CMD MD,CMD CP
+–½—ß	CMD EX
+‹@”\	ƒfƒBƒŒƒNƒgƒŠ‚ÌŠi”[ƒTƒCƒY‚ðŠg’£‚µ‚Ü‚·B
+‘Ž®	CMD EX <ƒfƒBƒŒƒNƒgƒŠ–¼>
+•¶—á	CMD EX "DIR"
+‰ðà	ƒfƒBƒŒƒNƒgƒŠ‚ÉV‚µ‚¢ƒNƒ‰ƒXƒ^‚ðŠ„‚è“–‚ÄAƒtƒ@ƒCƒ‹“™‚ÌŠi”[”‚ð‘‚â‚µ‚Ü‚·B
+	ƒtƒ@ƒCƒ‹ƒZ[ƒuŽž‚âƒfƒBƒŒƒNƒgƒŠì¬Žž‚ÉƒfƒBƒŒƒNƒgƒŠƒtƒ‹‚ÌƒGƒ‰[‚ªo‚½Û‚ÉŽg—p‚µ‚Ü‚·B
+	‚È‚¨AFAT16‚ÌŽd—l‚É‚æ‚èƒ‹[ƒgƒfƒBƒŒƒNƒgƒŠ‚É‘Î‚µ‚Ä‚ÍŽÀs‚Å‚«‚Ü‚¹‚ñB
+ŽQÆ	CMD MD,CMD CP
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD D
-æ©Ÿèƒ½	ç•ªå·ã§æŒ‡å®šã•ã‚ŒãŸã‚»ã‚¯ã‚¿ã‚’ãƒ€ãƒ³ãƒ—è¡¨ç¤ºã—ã¾ã™ã€‚
-æ›¸å¼	CMD D <ã‚»ã‚¯ã‚¿ç•ªå·>
-æ–‡ä¾‹	CMD D "00000001"
-è§£èª¬	8æ¡ã®16é€²æ•°ã§æŒ‡å®šã•ã‚ŒãŸã‚»ã‚¯ã‚¿ã‚’ãƒ€ãƒ³ãƒ—è¡¨ç¤ºã—ã¾ã™ã€‚ç”»é¢ã«ã¯256ãƒã‚¤ãƒˆå˜ä½ã§è¡¨ç¤ºã•ã‚Œã€å‰å¾Œã®ã‚»ã‚¯ã‚¿ã¸ä»»æ„ã«ç§»å‹•ã§ãã¾ã™ã€‚
-å‚ç…§	CMD S
+–½—ß	CMD D
+‹@”\	”Ô†‚ÅŽw’è‚³‚ê‚½ƒZƒNƒ^‚ðƒ_ƒ“ƒv•\Ž¦‚µ‚Ü‚·B
+‘Ž®	CMD D <ƒZƒNƒ^”Ô†>
+•¶—á	CMD D "00000001"
+‰ðà	8Œ…‚Ì16i”‚ÅŽw’è‚³‚ê‚½ƒZƒNƒ^‚ðƒ_ƒ“ƒv•\Ž¦‚µ‚Ü‚·B‰æ–Ê‚É‚Í256ƒoƒCƒg’PˆÊ‚Å•\Ž¦‚³‚êA‘OŒã‚ÌƒZƒNƒ^‚Ö”CˆÓ‚ÉˆÚ“®‚Å‚«‚Ü‚·B
+ŽQÆ	CMD S
 --------------------------------------------------------------------------------
-å‘½ä»¤	CMD S	ã€CMTã€‘ã€BASã€‘ã€BINã€‘
-æ©Ÿèƒ½	ãƒ•ã‚¡ã‚¤ãƒ«åã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªåã§ã‚»ã‚¯ã‚¿ã‚’ãƒ€ãƒ³ãƒ—è¡¨ç¤ºã—ã¾ã™ã€‚
-æ›¸å¼	CMD S <ãƒ•ã‚¡ã‚¤ãƒ«å ã¾ãŸã¯ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå>
-æ–‡ä¾‹	CMD S "/DIR/PRG1.CMT"
+–½—ß	CMD S	yCMTzyBASzyBINz
+‹@”\	ƒtƒ@ƒCƒ‹–¼‚âƒfƒBƒŒƒNƒgƒŠ–¼‚ÅƒZƒNƒ^‚ðƒ_ƒ“ƒv•\Ž¦‚µ‚Ü‚·B
+‘Ž®	CMD S <ƒtƒ@ƒCƒ‹–¼ ‚Ü‚½‚Í ƒfƒBƒŒƒNƒgƒŠ–¼>
+•¶—á	CMD S "/DIR/PRG1.CMT"
 	CMD S "/DIR"
-è§£èª¬	ãƒ•ã‚¡ã‚¤ãƒ«ã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®é–‹å§‹ã‚»ã‚¯ã‚¿ã‚’ãƒ€ãƒ³ãƒ—è¡¨ç¤ºã—ã¾ã™ã€‚æ“ä½œé–¢ä¿‚ã¯CMD Dã¨åŒæ§˜ã§ã™ã€‚
-å‚ç…§	CMD D
+‰ðà	ƒtƒ@ƒCƒ‹‚âƒfƒBƒŒƒNƒgƒŠ‚ÌŠJŽnƒZƒNƒ^‚ðƒ_ƒ“ƒv•\Ž¦‚µ‚Ü‚·B‘€ìŠÖŒW‚ÍCMD D‚Æ“¯—l‚Å‚·B
+ŽQÆ	CMD D
 
 
-â– æœªå®Ÿè£…å‘½ä»¤
-ãƒ»ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå‰Šé™¤å‘½ä»¤
-ãƒ»ãƒ•ã‚¡ã‚¤ãƒ«ç§»å‹•å‘½ä»¤
+¡–¢ŽÀ‘•–½—ß
+EƒfƒBƒŒƒNƒgƒŠíœ–½—ß
+Eƒtƒ@ƒCƒ‹ˆÚ“®–½—ß
 
 
-â– è¦æœ›ãƒ»ä¸å…·åˆå ±å‘Šã¯ã“ã¡ã‚‰ã¸
+¡—v–]E•s‹ï‡•ñ‚Í‚±‚¿‚ç‚Ö
 
-	ã¡ãã‚‰ã£ãº 
+	‚¿‚­‚ç‚Á‚Ø 
 	twitter @chiqlappe
 
