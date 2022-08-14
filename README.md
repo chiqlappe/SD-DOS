@@ -1,7 +1,7 @@
 # PC-8001 SD-DOS
 
 ## 64KB RAM環境での使用方法
-* SD-DOSを64KB RAM環境で使用する場合は、64KRAM.hexをEPROMに書き込む
+* SD-DOSを64KB RAM環境で使用する場合は、64KRAM.hexをEPROMに書き込む(開始アドレスは6000Hなので、お使いのEPROMにあわせてオフセットして下さい）
 
 ## 目的
 * PC-8001の拡張ポートに接続されたmicroSDドライブと拡張RAM(8KBバッテリバックアップRAMまたは64KB RAM)を使って、SDメモリカードの読み書きを行う
